@@ -96,8 +96,8 @@ const Wrapper = styled.div`
   }
 `;
 
-  const selectedVideoUrl = `https://www.youtube.com/embed/${video.id.videoId}`;
   const VideoDetail = ({ video, videos, handleVideoSelect }) => {
+  const selectedVideoUrl = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
     <Wrapper>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {useParams } from "react-router-dom";
 import Skeleton from "../skeletons/HomeSkeleton";
 import VideoGrid from "../styles/VideoGrid";
-import youtube from '../apis/youtube';
+import youtube from '../services/youtube';
 import VideoCard from '../components/VideoCard';
 import Navbar from "../components/Navbar";
 import VideoDetail from "../components/VideoDetail";
