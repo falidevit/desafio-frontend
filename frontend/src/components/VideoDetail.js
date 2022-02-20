@@ -96,13 +96,13 @@ const Wrapper = styled.div`
   }
 `;
 
-const VideoDetail = ({ video, videos, handleVideoSelect }) => {
+  const selectedVideoUrl = `https://www.youtube.com/embed/${video.id.videoId}`;
+  const VideoDetail = ({ video, videos, handleVideoSelect }) => {
 
-  const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
   return (
     <Wrapper>
         <div className="video-container">
-        <div className="video"><iframe src={videoSrc} allowFullScreen title="Video player"/></div>
+        <div className="video"><iframe src={selectedVideoUrl} allowFullScreen title="Video player"/></div>
 
         <div className="video-info">
           <h3>{video.snippet.title}</h3>

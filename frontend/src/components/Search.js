@@ -66,7 +66,7 @@ const Search = () => {
       if (!searchterm.value.trim()) {
         return "Please enter the searchterm";
       }
-
+      
       history.push(`/${searchterm.value}`);
       searchterm.setValue("");
       setDropdown(false)
